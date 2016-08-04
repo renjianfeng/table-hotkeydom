@@ -1,0 +1,1172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link rel="stylesheet" type="text/css" href="css/basic.css"/>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.hotkeys.js"></script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+body
+{
+	background-color:#f0f0f0;
+}
+.cention
+{
+}
+table
+{
+	width:100%;
+	color:#000;
+	font-size:14px;
+	font-family:"微软雅黑";
+	border-radius:5px;
+	border-collapse:collapse;
+	padding:1px;
+	
+	
+	
+}
+table tr
+{
+	height:35px;
+	line-height:35px;
+	color:#1e1e1e;
+	background-color:#fff;
+	border-radius:5px;
+	border-right: solid 1px #CCC;
+}
+table td
+{
+	border-right:dashed 1px #CCC;
+}
+.tdd
+{
+	border-right: solid 1px #CCC;
+}
+.td_padd
+{
+	padding-right:7px;
+}
+.td_text
+{
+	width:65px;
+}
+.td_text_2
+{
+	width:40px;
+}
+th
+{
+	background-color:#F7F7F7;
+	height:25px;
+	line-height:25px;
+	color:#333;
+	border-radius:5px;
+	
+}
+td
+{
+	border:1px solid #CCC;
+	word-break:keep-all;
+	text-align:right;
+	padding-right:5px;
+	padding-left:5px;
+	min-width:40px;
+}
+
+caption
+{
+	padding-left:10px;
+	font-size:12px;
+	height:25px;
+	line-height:25PX;
+	text-align:left;
+}
+input
+{
+	width:98%;
+	height:30px;
+	line-height:30px;
+	margin-left:0px;
+	border:0px;
+	padding-left:2px;
+	font-family:"微软雅黑";
+	font:14px;
+	float:left;
+}
+select
+{
+	font-family:"微软雅黑";
+	font:14px;
+}
+.shubiao
+{
+	padding:1px;
+	border-radius:5px;
+}
+.shubiao:hover
+{
+	background-color:#CCC;
+	
+}
+.addclass
+{
+	padding:0px;
+	border:1px solid #F00;
+}
+.addclass2
+{
+	padding:0px;
+	border:1px solid #F00;
+	
+}
+.about_left
+{
+	background-color:#FFF;
+}
+.about_left ul
+{
+	margin-top:10px;
+	margin-left:10px;
+}
+.about_left ul input
+{
+	display:inline;
+	background-color:#e3e7e8;
+	padding:0px 6px;
+	cursor:pointer;
+	border-radius:4px;
+	font-size:14px;
+	width:auto;
+	
+}
+.about_left ul input:hover
+{
+	background-color:#86a0a6;
+	color:#FFF;
+}
+.about_left ul input:focus
+{
+	background-color:#86a0a6;
+	color:#FFF;
+}
+input{
+	border:0px;
+}
+input:focus
+{
+	background-color:#f0c56e;
+}
+input:active
+{
+	background-color:#c99f4b;
+}
+.about_right
+{
+	background-color:#FFF;
+	border-radius:5px;
+}
+.zjf_td
+{
+	color:#999;
+}
+.tab_foot
+{
+	width:90%;
+	margin:10px auto;
+	min-width:1015px;
+	
+}
+.tab_foot a
+{
+	display:block;
+	width:29.5%;
+	background-color:#f0c56e;
+	height:33px;
+	float:left;
+	margin-left:2.5%;
+	text-decoration:none;
+	color:#636565;
+	line-height:33px;
+	text-align:center;
+	font-size:15px;
+	border:1px solid #a28032;
+	border-radius:3px;
+	cursor:pointer;
+}
+.tab_foot a:hover
+{
+	background-color:#fdd580;
+}
+.dayin_about
+{
+	font-size:12px;
+	width:29.7%;
+	padding:0px;
+	background-color:#CCC;
+	margin:0 auto;
+	 height:30px;
+	 line-height:30px;
+	 display:none;
+}
+.dayin_about input
+{
+	 height:20px;width:15px;
+	 line-height:20px;
+	 margin-top:4px;
+	 margin-left:1.5%;
+	 padding:0px;
+
+}
+.dy
+{
+	float:left;
+}
+.beizhue
+{
+	margin-left:10px;
+	height:20px;
+	line-height:20px;
+	font-size:10px;
+	margin-top:3px;
+}
+.top_help
+{
+
+	width:200px;
+	margin-right:0px;
+	position:fixed;
+	right:5px;
+	top:40px;
+	
+	
+}
+
+.top_right_help
+{
+	text-align:center;
+	height:40px;
+	width:40px;
+	margin-left:140px;
+	cursor:pointer;
+	background-image:url(img/help_ico.png);
+	position:fixed;
+	right:25px;
+	
+}
+.top_right_help:hover
+{
+	background-image:url(img/help_ico_hover.png);
+}
+.help_about
+{
+	background-image:url(img/paopaobg.png);
+	margin-top:-8px;
+	padding:10px;
+}
+.help_about font
+{
+	padding:3px;
+	background-color:#963;
+	color:#FFF;
+	border-radius:3px;
+}
+.help_about h3
+{
+	margin-top:10px;
+	font-size:12px;
+	margin-left:10px;
+}
+.paopao
+{
+	width:200px;
+	height:20px;
+	background-image:url(img/paopao.png);
+}
+.help_all
+{
+	display:none;
+}
+.must_input
+{
+	color:#F00;
+	font-weight:bold;
+}
+label
+{
+	cursor:pointer;
+}
+.input_button
+{
+	cursor:pointer;
+}
+textarea
+{
+	font-family:"微软雅黑";
+}
+</style>
+</head>
+<body onkeyup="showKeyName(event)">
+ <div class="top_right_help">
+        </div>
+    <div class="top_help">
+       
+        <div class="help_all">
+        <div class="paopao">
+        </div>
+        <div class="help_about">
+        
+        <h3><font>Ctrl</font>+<font>Alt</font>：打印</h3>
+        <h3><font>Ctrl</font>+<font>Alt</font>：打印</h3>
+        <h3><font>Ctrl</font>+<font>Alt</font>：打印</h3>
+        <h3><font>Ctrl</font>+<font>Alt</font>：打印</h3>
+        <h3><font>Ctrl</font>+<font>Alt</font>：打印</h3>
+        <h3><font>Ctrl</font>+<font>Alt</font>：打印</h3>
+        <h3><font>Ctrl</font>+<font>Alt</font>：打印</h3>
+        <h3><font>Ctrl</font>+<font>Alt</font>：打印</h3>
+        </div>
+        </div>
+
+</div>
+<div class="cention" style=" width:90%; margin:0 auto; margin-top:5px; min-width:1015px;">
+  <div class="top shubiao a1">
+    <table  border='0' cellpadding='0' cellspacing='1' >
+      <tr>
+        <td style="" class="td_text"><font class="must_input">*</font>运单号</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td class="td_text"><font class="must_input">*</font>客户单号</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td class="td_text"><font class="must_input">*</font>订单号</td><td style="border-left:0px;"><input class="form_tt" id="" class="" type="text" /></td>
+        <td style="width:60px; text-align:left;"><input class="form_tt nbj_check input_button" type="checkbox" id="nbj_check" style=" height:15px;width:20%; float:left; margin-top:11px; margin-left:3px;"><label for="nbj_check">内部件</label></td>
+        <td class="td_text">返回原单</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td  class="td_text"><input type="button" class="form_tt input_button" onclick="ddddds()" value="查询"  style="width:100%;" /></td>
+      </tr>
+    </table>
+  </div>
+    <div class="s_left shubiao a2" style="width:49%; margin-top:5px; float:left;">
+        <table class=" shubiao" border='0' cellpadding='0' cellspacing='1' >
+        <caption><font style="font-weight:bold;">收货人</font>信息（Alt+1）</caption>
+      <tr>
+        <td class="td_text"><font class="must_input">*</font>手　机</td><td colspan="2" style="border-left:0px;"><input class="form_tt alt_1" id="" type="text" class="" /></td>
+        <td class="td_text"><font class="must_input">*</font>电　话</td><td colspan="2"class="tdd" style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+      </tr>
+      <tr>
+        <td class="td_text"><font class="must_input">*</font>客　户</td><td colspan="2" style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td class="td_text"><font class="must_input">*</font>地　址</td><td style="border-left:0px;"class="tdd"><input class="form_tt" id="" type="text" /></td>
+        <td style=" width:70px; padding:0px; text-align:center;">区域选择</td>
+        
+      </tr>
+      <tr>
+        <td class="td_text"><font class="must_input">*</font>目的地</td><td style="border-left:0px;"><input class="form_tt" id="" type="text"style="font-weight:bold;" value="简拼/全拼/汉字" onblur="out_text(this,'简拼/全拼/汉字')" onfocus="on_text(this,'简拼/全拼/汉字')" /></td>
+        <td style="border-left:0px; width:100px;"><input onblur="out_text(this,'乡镇')" onfocus="on_text(this,'乡镇')" class="form_tt xz_text" id="" style="width:100px;font-weight:bold;" type="text" value="乡镇" /></td>
+        <td class="td_text">目的网点</td><td colspan="2" class="tdd" style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class="s_left shubiao a3" style="width:49%; margin-top:5px; float:right;">
+        <table class=" shubiao" border='0' cellpadding='0' cellspacing='1' >
+        <caption><font style="font-weight:bold;">发货人</font>信息（Alt+s）</caption>
+      <tr>
+        <td class="td_text"><font class="must_input">*</font>手　机</td><td style="border-left:0px;"><input class="form_tt alt_2" id="" type="text" class=""  /></td>
+        <td class="td_text"><font class="must_input">*</font>电　话</td><td style="border-left:0px;"class="tdd"><input class="form_tt" id="" type="text" /></td>
+      </tr>
+      <tr>
+        <td class="td_text"><font class="must_input">*</font>客　户</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td class="td_text"><font class="must_input">*</font>地　址</td><td style="border-left:0px;"class="tdd"><input class="form_tt fhdz_text" id="" type="text" /></td>
+      </tr>
+      <tr>
+        <td class="td_text" style="color:#999;">客户类型</td><td style=" text-align:left; padding-left:10px;border-left:0px;"><select disabled="disabled" class="form_tt khlx_text" name="cars">
+			<option value="vip">vip</option>
+			<option value="saab">Saab</option>
+			<option value="fiat" selected="selected">Fiat</option>
+			<option value="audi">Audi</option>
+			</select>
+        </td>
+        <td class="td_text" style="color:#999;">优惠率</td><td style=" text-align:left; padding-left:10px;border-left:0px;"class="tdd"><select disabled="disabled" class="form_tt" name="cars">
+			<option value="vip">95%</option>
+			<option value="saab">90%</option>
+			<option value="fiat" selected="selected">85%</option>
+			<option value="audi">80%</option>
+		</select></td>
+      </tr>
+    </table>
+    </div>
+    <div style="clear:both;"></div>
+  <div class="tab_cen shubiao a4" style=" margin-top:5px;">
+    <table class="app_tr shubiao" border='0' cellpadding='0' cellspacing='1' >
+    <caption><font style=" float:left; margin-right:20px; ">货物信息（Alt+t）</font><input type="checkbox" id="aa" class="form_tt tab_bu" style="float:left; padding:0px; height:15px;width:15px; margin-top:5px; margin-left:3px;"><label style=" float:left; color:#666;" for="aa">不使用体积、重量</label></caption>
+      <tr>
+        <td class="td_text"><font class="must_input">*</font>品　名</td><td style="border-left:0px;"><input id="" class="form_tt alt_3 pm_text" type="text" class=""  /></td>
+        <td class="td_text"><font class="must_input">*</font>件　数</td><td style="border-left:0px;"><input id="" class="form_tt" type="text" /></td>
+        <td class="td_text">包　装</td><td style="border-left:0px;"><input id="" class="form_tt" type="text" /></td>
+        <td class="td_text td_tr">体积(m3)</td><td style="border-left:0px;"><input id="" class="form_tt tab_none tj_text" type="text" /></td>
+        <td class="td_text td_tr">实重(kg)</td><td style="border-left:0px;"><input id="" class="form_tt tab_none" type="text" /></td>
+        <td class="td_text td_tr">计重(kg)</td><td style="border-left:0px;"><input id="" class="form_tt tab_none" type="text" /></td>
+        <td style="text-align:center;"class="td_text_2"><input type="button" class="form_tt input_button  add_td" onclick="t()" value="+"  style="width:100%;" /></td>
+      </tr>
+      
+    </table>
+  </div>
+        <div class="s_left shubiao a5" style="width:49%; margin-top:5px; float:left;">
+        <table class=" shubiao nbj" border='0' cellpadding='0' cellspacing='1' >
+        <caption>费用信息（Alt+u）</caption>
+      <tr>
+        <td class="td_text"><font class="must_input">*</font>运　费</td><td style="border-left:0px;"><input id="" class="form_tt alt_4 yf_text" type="text" class="" /></td>
+        
+        <td class="td_text" style="width:50px;">垫付款</td><td style="border-left:0px; border-right:0px;"><input class="form_tt dfk_text" id="" type="text"  /></td>
+        <td class="td_text" style="width:58px; border-left: dashed #CCCCCC 1px; text-align:left; padding-right:0px; padding-left:7px; border-right:0px;"><input type="checkbox" id="dfk_yf" class="form_tt dfk_yf input_button"  / style=" height:15px;width:20%; float:left; margin-top:11px; margin-left:3px;"><label for="dfk_yf">已付</label></td>
+        <td class="td_text">声明价值</td><td style="border-left:0px;"><input id="" class="form_tt smjz_text" type="text" /></td>
+        
+        
+        
+    </tr>
+      <tr>
+        <td class="td_text shf_td" style="color:#999;"><input class="form_tt input_button shf_check" id="shf_check" type="checkbox"  / style=" height:15px;width:20%; float:left; margin-top:10px; margin-left:5px;"><label for="shf_check">送货费</label></td><td style="border-left:0px;"><input class="form_tt shf_text" disabled="disabled" id="" type="text"/></td>
+        <td class="td_text tdd" style="width:50px; border-right:0px;">回垫费</td><td style=" border-left: dashed #CCCCCC 1px;"><input class="form_tt hdaf_text" id="" type="text"/></td>
+        <td style="text-align:left; padding-right:0px; padding-left:7px; border-left: dashed #CCCCCC 1px; "><input class="form_tt hdf_yf input_button" id="hdf_yf" type="checkbox"  / style=" height:15px;width:20%; float:left; margin-top:11px; margin-left:3px;"><label for="hdf_yf">已付</label></td>
+        <td class="td_text  tdd" style=" border-right:0px;">保价费</td>
+        <td style="border-left: dashed #CCCCCC 1px;"><input class="form_tt bjf_text" id="" type="text" /></td>
+        </tr>
+
+    </table>
+    </div>
+    <div class="s_left shubiao a6" style="width:49%; margin-top:5px; float:right;">
+        <table class=" shubiao nbj" border='0' cellpadding='0' cellspacing='1' >
+        <caption>代收款信息（Alt+l）</caption>
+      <tr>
+        <td class="td_text dsk_td">代收款</td><td style="border-left:0px; min-width:90px;"><input class="form_tt alt_5 dsk_text" onkeyup="t_input()" id="" type="text" class=""  /></td>
+        <td class="td_text dsyj_td" style="color:#999;">代收佣金</td><td style="border-left:0px;"><input disabled="disabled" class="form_tt dsyj_text" id="" type="text" /></td>
+        <td colspan="2" style="color:#999; min-width:60px;" class="khr_td">开户人</td><td style="border-left:0px; min-width:70px;max-width:70px"><input disabled="disabled" class="form_tt khr_text" id="" type="text" /></td>
+      </tr>
+      <tr>
+        <td class="td_text khh_td" style="color:#999;">开户行</td><td style="border-left:0px; text-align:left; padding-left:10px;"><select disabled="disabled" class="form_tt khh_text" name="cars">
+			<option value="vip">中国银行</option>
+			<option value="saab">西安银行</option>
+			<option value="fiat" selected="selected">交通银行</option>
+			<option value="audi">农业银行</option>
+		</select></td>
+        <td class="td_text yhkh_td" style="color:#999;">银行卡号</td><td colspan="3" style="border-left:0px; min-width:150px;"><input disabled="disabled" class="form_tt yhkh_text" id="" type="text" /></td>
+        <td colspan="3" style=" text-align:left; padding-right:0px; color:#999;" class="bc_td"><input disabled="disabled" class="form_tt input_button bc_text" id="dsbc_check" type="checkbox"  / style=" height:15px;width:20%; float:left; margin-top:11px; margin-left:3px;"><label for="dsbc_check">保存</label></td>
+      </tr>
+      
+    </table>
+    </div>
+    <div style="clear:both"></div>
+     <div class="top shubiao nbj" style="margin-top:5px;">
+    <table class=" shubiao" border='0' cellpadding='0' cellspacing='1' >
+      <tr>
+        <td class="td_text" style="font-weight:bold; color:#F00;">合　计</td><td style="border-left:0px; width:200px;"></td>
+        <td class="td_text">到　付</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td class="td_text">现　付</td><td style="border-left:0px;"><input class="form_tt" id="" class="" type="text" /></td>
+        <td class="" style="width:50px;">回单付</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td class="td_text">月　结</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+      </tr>
+    </table>
+    </div>
+      <div class="tab_cen shubiao a7" style=" margin-top:5px;">
+    <table class=" shubiao nbj" border='0' cellpadding='0' cellspacing='1' >
+    <caption>附加费用（Alt+y）</caption>
+      <tr>
+        <td>转寄费</td><td style="border-left:0px;"><input class="form_tt alt_6 zjf" id="" type="text" /></td>
+        <td class="zjf_td"  style="width:70px;"><input class="form_tt input_button" id="hdf_check" type="checkbox"  / style=" height:15px;width:20%; float:left; margin-top:10px; margin-left:10px;"><label for="hdf_check">回单费</label></td><td style="border-left:0px;"><input class="form_tt hdf_text" id="" type="text" disabled="disabled"/></td>
+        <td class="zjf_td" style="width:70px;">回单要求</td><td style="border-left:0px; text-align:left; padding-left:10px;"><input class="form_tt hdf_text hdyq" id="" type="text" disabled="disabled"/></td>
+        <td class="td_text jjf_td" style="color:#999;"><input class="form_tt input_button" id="jjf_check" type="checkbox"  / style=" height:15px;width:20%; float:left; margin-top:10px; margin-left:5px;"><label for="jjf_check">加急费</label></td><td style="border-left:0px;"><input disabled="disabled" class="form_tt jjf" id="" type="text" /></td>
+        <td class="td_text dtz_td" style="min-width:108px;color:#999;"><input class="form_tt input_button" id="dtz_check" type="checkbox"  / style=" height:15px;width:20%; float:left; margin-top:10px; margin-left:0px;"><label for="dtz_check">等通知放货费</label></td><td style="border-left:0px;"><input disabled="disabled" class="form_tt dtz_text" id="" type="text" /></td>
+        <td class="td_text">包装费</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+
+      </tr>
+      <tr>
+        <td class="td_text">派送费</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td >下拨转寄费</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td >提货租车费</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td class="td_text">车牌号</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td class="td_text">司机</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+        <td class="td_text">提货费</td><td style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>    
+      </tr>
+      <tr>
+      	<td class="td_text">其他费</td><td  colspan="11" style="border-left:0px;"><input class="form_tt" id="" type="text" /></td>
+      </tr>
+    </table>
+    </div>
+    <div class=" shubiao a8" style="margin-top:5px; background-color:#FFF; border:1px solid #CCC;">
+    <div class="about_left" style="height:200px; width:29.5%; float:left; border-right:1px solid #CCC;">
+    <ul class="beizhu">
+    <font style="float:left;"><font style="color:#F00; font-size:14px;">备注</font>（Alt+n）：</font>
+    <input class="form_tt beizhue input_button alt_7" type="button" style="" value="易爆品" />
+    <input class="form_tt beizhue input_button" type="button" value="破损自负" />
+    <input class="form_tt beizhue input_button" type="button" value="易碎品" />
+    <input class="form_tt beizhue input_button" type="button" value="易碎品" />
+    <input class="form_tt beizhue input_button" type="button" value="易碎品" /><input class="form_tt beizhue" type="button" value="易碎品" /><input class="form_tt beizhue" type="button" value="易碎品" /><input class="form_tt beizhue" type="button" value="易碎品" /><input class="form_tt beizhue" type="button" value="易碎品" />
+    
+    </ul>
+  
+    </div>
+    <div class="about_right" style="height:200px; width:70%; float:right;"><textarea class="beizhuz form_tt ddsd"  name="shuoshuo" id="shuoshuo" style=" resize:none; width:97%; height:50px;;border:#999 solid 0px;border-radius:5px; padding:10px;" ></textarea>
+    </div>
+    <div style="clear:both"></div>
+    </div>
+    </div>
+    <div class="tab_foot">
+    <a onclick="baocun()">保存Ctrl+S</a>
+    <a onclick="dayin()">打印Ctrl+Alt</a>
+    <a style="width:20px; margin-left:0px;" class="dy_bu">+</a>
+    <a onclick="chongzhi()">重置Ctrl+Z</a>
+    <div style="clear:both"></div>
+        <div class="dayin_about">
+            <input type="checkbox" class="dy"><font class="dy">白打</font>
+            <input type="checkbox" class="dy"><font class="dy">套打</font>
+            <input type="checkbox" class="dy"><font class="dy">热敏纸</font>
+            <input type="text" class="dy" style=""><font class="dy">份</font>
+            <input type="checkbox" class="dy"><font class="dy">标签</font>
+            <input type="checkbox" class="dy"><font class="dy">更新配置</font>
+        </div>
+    </div>
+</div>
+
+
+</body>
+<script type="text/javascript">
+var f=1;
+window_about();
+window_about_t();
+window.onresize=function(){
+      window_about();
+	  window_about_t();
+     //document.getElementById("all").style.height = h + "px"
+	} 
+function window_about()
+{
+		var h = $(window).height();//获取页面的高度
+		if(h>800)
+		{
+			$(".about_left").height(200);
+			$(".about_right").height(200);
+			$(".ddsd").height(180);
+			
+		}else
+		{
+			$(".about_left").height(90);
+			$(".about_right").height(90);
+			$(".ddsd").height(64.5);
+		}
+}
+function window_about_t()
+{
+		var h = $(window).width();//获取页面的高度
+		if(h>1150)
+		{
+			$(".top_right_help").fadeIn();
+			
+		}else
+		{
+			$(".top_right_help").fadeOut();
+		}
+}
+function t_input()
+{
+	var d=$(".dsk_text").val();
+	if(d==null||d==""){
+		$(".dsyj_text").attr("disabled", true);
+		$(".khr_text").attr("disabled", true);
+		$(".khh_text").attr("disabled", true);
+		$(".yhkh_text").attr("disabled", true);
+		$(".bc_text").attr("disabled", true);
+		$(".dsyj_td").css("color","#999");
+		$(".khr_td").css("color","#999");
+		$(".khh_td").css("color","#999");
+		$(".yhkh_td").css("color","#999");
+		$(".bc_td").css("color","#999");
+	}
+	else{
+
+		$(".dsyj_text").attr("disabled", false);
+		$(".khr_text").attr("disabled", false);
+		$(".khh_text").attr("disabled", false);
+		$(".yhkh_text").attr("disabled", false);
+		$(".bc_text").attr("disabled", false);
+		$(".dsyj_td").css("color","#000");
+		$(".khr_td").css("color","#000");
+		$(".khh_td").css("color","#000");
+		$(".yhkh_td").css("color","#000");
+		$(".bc_td").css("color","#000");
+    }
+}
+function on_text(obj,text_about)
+{
+	var vl=obj.value;
+	if(vl==text_about)
+	{
+		$(obj).val("");
+	}
+}
+function out_text(obj,text_about)
+{
+	var vl=obj.value;
+	if(vl==null||vl=="")
+	{
+		$(obj).val(text_about);
+	}
+}
+function ddddds()
+{
+	alert("sssssss");
+}
+function t()//替换页面函数  修改title函数
+{
+	//urld="'"+urld+"'";
+var dde=$(document).html();
+var dd="<tr><td><font class='must_input'>*</font>品名</td><td style='border-left:0px;'><input id='' class='form_tt' type='text' /></td><td><font class='must_input'>*</font>件数</td><td style='border-left:0px;'><input  id='' class='form_tt' type='text' /></td><td>包装</td><td style='border-left:0px;'><input id='' class='form_tt' type='text' /></td><td class='td_tr'>体积(m3)</td><td  style='border-left:0px;'><input id='' class='form_tt tab_none tj_text' type='text' /></td><td class='td_tr'>实重(kg)</td><td style='border-left:0px;'><input  id='' class='form_tt tab_none' type='text' /></td><td class='td_tr'>计重(kg)</td><td style='border-left:0px;'><input  id='' class='form_tt tab_none' type='text' /></td><td style='text-align:center;'><input type='button' class='form_tt ddrt input_button' value='-'  style='width:100%;' /></td></tr>";
+
+	 $(".app_tr").append(dd);/*新增表格列*/
+	 	   	if($(".tab_bu").attr("checked"))      /*重新初始化append页面的不可用状态*/
+			{
+			$(".td_tr").attr("disabled", true);
+			$(".tab_none").attr("disabled", true);
+			  
+			}
+			else
+			{
+			
+			$(".td_tr").attr("disabled", false);
+			$(".tab_none").attr("disabled", false);
+			 
+			}
+	 var d_i=0;  
+
+       tab_fun(); /*重新初始化光标移动位置综合核心函数*/
+
+	  	$(".ddrt").click(function(){
+			if($(".tab_bu").attr("checked"))      /*重新初始化append页面的不可用状态*/
+			{
+			$(".td_tr").attr("disabled", true);
+			$(".tab_none").attr("disabled", true);
+			  
+			}
+			else
+			{
+			
+			$(".td_tr").attr("disabled", false);
+			$(".tab_none").attr("disabled", false);
+			 
+			}
+		$(this).parent("td").parent("tr").remove();/*移除表格列*/
+
+		jQuery(".add_td").focus();
+		 tab_fun();                                    /*重新初始化光标移动位置综合核心函数*/
+
+		})
+}
+</script>
+<script type="text/javascript">    
+ jQuery('.form_tt:first').focus(); 
+	tab_fun();	/*核心函数首次遍历*/
+	  
+	function tab_fun()/*快捷键核心方法，请勿修改*/
+	{
+		 var d_i=0;  
+ 		 var $inp = jQuery('.form_tt'); 
+		 
+         $inp.bind('keydown', function (e) {  
+	  	  var key = e.which;
+		  var es=jQuery('.form_tt').size(); 
+		  var ds=es-1;
+              if (key == 13) {  //当按下enter 键时
+			  
+                  e.preventDefault(); 
+				   var cs=jQuery('.form_t').size();
+				   var es=jQuery('.form_tt').size();
+				    var fs=es+cs;
+                  var nxtIdx = $inp.index(this) + 1; 
+				 
+				 if(nxtIdx>=es)
+				  {
+					 jQuery(".form_tt:eq(0)").focus(); 
+				  }
+				  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("shf_check")==true)
+				  {
+					 jQuery(".alt_5").focus(); 
+				  }
+				  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("hdaf_text")==true)
+				  {
+					 jQuery(".dfk_text").focus(); 
+				  }
+				  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("bjf_text")==true)
+				  {
+					 jQuery(".smjz_text").focus(); 
+				  }
+				  else if(typeof($(".form_tt:eq(" + nxtIdx + ")").attr("disabled"))=="undefined")
+				  {
+                  jQuery(".form_tt:eq(" + nxtIdx + ")").focus();  
+				  }
+				  else{
+						  if($(".form_tt:eq(" + nxtIdx + ")").hasClass("hdf_text")==true)
+						  {
+						  jQuery("#jjf_check").focus();
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("shf_text")==true)
+						  {
+						  jQuery(".dfk_text").focus();
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("alt_4")==true)
+						  {
+						  jQuery(".alt_7").focus();
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("tj_text")==true)
+						  {
+						   var dis_id=nxtIdx+3;
+						  jQuery(".form_tt:eq(" + dis_id + ")").focus();  
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("jjf")==true)
+						  {
+						   var dis_id=nxtIdx+1;
+						  jQuery(".form_tt:eq(" + dis_id + ")").focus();  
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("dtz_text")==true)
+						  {
+						   var dis_id=nxtIdx+1;
+						  jQuery(".form_tt:eq(" + dis_id + ")").focus();  
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("dsyj_text")==true)
+						  {
+						   var dis_id=nxtIdx+5;
+						  jQuery(".form_tt:eq(" + dis_id + ")").focus();  
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("khlx_text")==true)
+						  {
+						   var dis_id=nxtIdx+3;
+						  jQuery(".form_tt:eq(" + dis_id + ")").focus();  
+						  }
+					  }
+			  }else if(key==17)//当按下ctrl键时
+			  {
+				    e.preventDefault();             
+                  var nxtIdx = $inp.index(this) - 1;  
+				  if(nxtIdx<0)
+				  {
+					 jQuery(".form_tt:eq("+ds+")").focus(); 
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("tab_bu")==true)
+				  {
+					 jQuery(".fhdz_text").focus(); 
+				  }else if(typeof($(".form_tt:eq(" + nxtIdx + ")").attr("disabled"))=="undefined")
+				  {
+                  jQuery(".form_tt:eq(" + nxtIdx + ")").focus();  
+				  }
+				  else{
+						  if($(".form_tt:eq(" + nxtIdx + ")").hasClass("hdyq")==true)
+						  {
+						  jQuery(".zjf").focus();
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("tj_text")==true)
+						  {
+						   var dis_id=nxtIdx-3;
+						  jQuery(".form_tt:eq(" + dis_id + ")").focus();  
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("jjf")==true)
+						  {
+						   var dis_id=nxtIdx-1;
+						  jQuery(".form_tt:eq(" + dis_id + ")").focus();  
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("shf_text")==true)
+						  {
+						  jQuery(".shf_check").focus();
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("dtz_text")==true)
+						  {
+						   var dis_id=nxtIdx-1;
+						  jQuery(".form_tt:eq(" + dis_id + ")").focus();  
+						  }
+						  else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("bc_text")==true)
+						  {
+						   var dis_id=nxtIdx-5;
+						  jQuery(".form_tt:eq(" + dis_id + ")").focus();  
+						  }else
+						  {
+						  jQuery(".alt_3").focus();
+						  }
+					  }
+
+			  }else if(key==40)  /*当按下  下箭头  键时*/
+			  {
+				  e.preventDefault();             
+                  var nxtIdx = $inp.index(this);  
+				  if($(".form_tt:eq(" + nxtIdx + ")").hasClass("yf_text")==true)
+				  {
+					  jQuery(".shf_check").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("shf_check")==true)
+				  {
+					  jQuery(".yf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("yf_text")==true)
+				  {
+					  jQuery(".shf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("shf_text")==true)
+				  {
+					  jQuery(".yf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("dfk_text")==true)
+				  {
+					  jQuery(".hdaf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("hdaf_text")==true)
+				  {
+					  jQuery(".dfk_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("dfk_yf")==true)
+				  {
+					  jQuery(".hdf_yf").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("hdf_yf")==true)
+				  {
+					  jQuery(".dfk_yf").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("smjz_text")==true)
+				  {
+					  jQuery(".bjf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("bjf_text")==true)
+				  {
+					  jQuery(".smjz_text").focus();
+				  }
+				  
+			  }else if(key==38)    /*当按下上箭头键时*/
+			  {
+				e.preventDefault();             
+                  var nxtIdx = $inp.index(this);  
+				  if($(".form_tt:eq(" + nxtIdx + ")").hasClass("yf_text")==true)
+				  {
+					  jQuery(".shf_check").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("shf_check")==true)
+				  {
+					  jQuery(".yf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("yf_text")==true)
+				  {
+					  jQuery(".shf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("shf_text")==true)
+				  {
+					  jQuery(".yf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("dfk_text")==true)
+				  {
+					  jQuery(".hdaf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("hdaf_text")==true)
+				  {
+					  jQuery(".dfk_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("dfk_yf")==true)
+				  {
+					  jQuery(".hdf_yf").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("hdf_yf")==true)
+				  {
+					  jQuery(".dfk_yf").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("smjz_text")==true)
+				  {
+					  jQuery(".bjf_text").focus();
+				  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("bjf_text")==true)
+				  {
+					  jQuery(".smjz_text").focus();
+				  }
+	   }
+
+      }); 
+	}  
+	  /*jQuery('.form_tt:first').focus(); 
+		 var d_i=0;  
+ 		 var $inp = jQuery('.form_tt'); 
+		 
+         $inp.bind('keydown', function (e) {  
+	  	  var key = e.which;
+		  var es=jQuery('.form_tt').size(); 
+		  var ds=es-1;
+              if (key == 13) {  //当按下right 键时
+			  
+                  e.preventDefault(); 
+				   var cs=jQuery('.form_t').size();
+				   var es=jQuery('.form_tt').size();
+				    var fs=es+cs;
+                  var nxtIdx = $inp.index(this) + 1; 
+				 
+				 if(nxtIdx>=es)
+				  {
+					 jQuery(".form_tt:eq(0)").focus(); 
+				  }
+				  if(typeof($(".form_tt:eq(" + nxtIdx + ")").attr("disabled"))=="undefined")
+				  {
+                  jQuery(".form_tt:eq(" + nxtIdx + ")").focus();  
+				  }
+				  else{
+						  if($(".form_tt:eq(" + nxtIdx + ")").hasClass("hdf_text")==true)
+						  {
+						  jQuery(".jjf").focus();
+						  }else if($(".form_tt:eq(" + nxtIdx + ")").hasClass("alt_4")==true)
+						  {
+						  jQuery(".alt_7").focus();
+						  }
+					  }
+			  }else if(key==17)//当按下left键时
+			  {
+				    e.preventDefault();             
+                  var nxtIdx = $inp.index(this) - 1;  
+				if(nxtIdx<0)
+				  {
+					 jQuery(".form_tt:eq("+ds+")").focus(); 
+				  }
+                  jQuery(".form_tt:eq(" + nxtIdx + ")").focus(); 
+
+			  }
+
+      }); */
+$(document).ready(dome);
+jQuery("li:eq(0)").css("background-color","#F00");
+		var dd=$("li").size()-1;
+		var ddd=0;
+		
+function baocun()
+{
+	alert("触发保存函数");
+}	
+function dayin()
+{
+	alert("触发打印函数");
+}
+function chongzhi()
+{
+	window.location.reload();
+}
+		
+	
+
+function dome()
+{
+	$(".top_right_help").mouseover(function(){
+		$(".help_all").fadeIn();
+	});
+	$(".top_right_help").mouseout(function(){
+		$(".help_all").fadeOut();
+	});
+	showKeyName(event);
+	$(".dy_bu").click(function(){
+    $(".dayin_about").slideToggle(100);
+  });
+	$("#hdf_check").change(function(){
+			if($(this).attr("checked"))
+			{
+			
+			   $(".hdf_text").attr("disabled", false);
+			   $(".zjf_td").css("color","#000");
+			   
+			   
+			}
+			else
+			{
+			$(".hdf_text").attr("disabled", true);
+			 $(".zjf_td").css("color","#999");
+			 
+			}
+	
+	})
+	$("#jjf_check").change(function(){
+			if($(this).attr("checked"))
+			{
+			
+			   $(".jjf").attr("disabled", false);
+			   $(".jjf_td").css("color","#000");
+			   
+			   
+			}
+			else
+			{
+			$(".jjf").attr("disabled", true);
+			 $(".jjf_td").css("color","#999");
+			 
+			}
+	
+	})
+		$("#dtz_check").change(function(){
+			if($(this).attr("checked"))
+			{
+			
+			   $(".dtz_text").attr("disabled", false);
+			   $(".dtz_td").css("color","#000");
+			   
+			   
+			}
+			else
+			{
+			$(".dtz_text").attr("disabled", true);
+			 $(".dtz_td").css("color","#999");
+			 
+			}
+	
+	})
+	$("#shf_check").change(function(){
+			if($(this).attr("checked"))
+			{
+			
+			   $(".shf_text").attr("disabled", false);
+			   $(".shf_td").css("color","#000");
+			   
+			   
+			}
+			else
+			{
+			$(".shf_text").attr("disabled", true);
+			 $(".shf_td").css("color","#999");
+			 
+			}
+	
+	})
+	
+	$(".nbj_check").change(function(){
+			if($(this).attr("checked"))
+			{
+			$(".nbj input").attr("disabled", true);
+			$(".nbj select").attr("disabled", true);
+			 $(".nbj").css("color","#999");
+			 $(".nbj td").css("color","#999");
+			  
+			   
+			}
+			else
+			{
+			 $(".nbj input").attr("disabled", false);
+			   $(".nbj select").attr("disabled", false);
+			   $(".nbj").css("color","#000");
+			   $(".nbj td").css("color","#000");
+			 
+			}
+	
+	})
+	$(".tab_bu").change(function(){
+			if($(this).attr("checked"))
+			{
+			$(".td_tr").attr("disabled", true);
+			$(".tab_none").attr("disabled", true);
+			  
+			}
+			else
+			{
+			
+			$(".td_tr").attr("disabled", false);
+			$(".tab_none").attr("disabled", false);
+			 
+			}
+	
+	})
+	//底部备注叠加
+	$(".beizhue").click(function(){
+		
+		var d=$(this).val();
+	    var z=$(".beizhuz").val();
+		if(z.indexOf(d) < 0 )
+		{
+		$(".beizhuz").attr('value',z+"/"+d);
+		}
+		})
+	//快捷键区域选择开始	
+	jQuery.hotkeys.add('Alt+1',function (){           
+		jQuery(".alt_1").focus(); 
+		addcss();
+		$(".a2").css("background-color","#CCC");
+		
+	});
+	jQuery.hotkeys.add('Alt+s',function (){  
+		jQuery(".alt_2").focus(); 
+		addcss();
+		$(".a3").css("background-color","#CCC");
+	});
+	jQuery.hotkeys.add('Alt+t',function (){           
+		jQuery(".alt_3").focus(); 
+		addcss();
+		$(".a4").css("background-color","#CCC");
+	});
+	jQuery.hotkeys.add('Alt+u',function (){           
+		jQuery(".alt_4").focus(); 
+		addcss();
+		$(".a5").css("background-color","#CCC");
+	});
+	jQuery.hotkeys.add('Alt+l',function (){           
+		jQuery(".alt_5").focus();
+		addcss(); 
+		$(".a6").css("background-color","#CCC");
+	});
+	jQuery.hotkeys.add('Alt+y',function (){           
+		jQuery(".alt_6").focus();
+		addcss(); 
+		$(".a7").css("background-color","#CCC");
+	});
+	jQuery.hotkeys.add('Alt+n',function (){           
+		jQuery(".alt_7").focus(); 
+		addcss();
+		$(".a8").css("background-color","#CCC");
+	});
+	//快捷键区域选择结束
+	
+	
+	/*保存快捷方法*/
+	jQuery.hotkeys.add('Ctrl+s',function (){           
+	baocun();
+	});
+	
+	/*撤销快捷方法*/
+	jQuery.hotkeys.add('Ctrl+z',function (){           
+	chongzhi();
+	});
+
+	jQuery.hotkeys.add('Alt+right',function (){ 
+
+		if(ddd<=dd)
+		{
+		ddd=ddd+1;
+		}else
+		{
+			ddd=0;
+		}
+		jQuery("li").css("background-color","#e3e7e8");
+		jQuery("li:eq("+ddd+")").css("background-color","#F00");
+	});
+		jQuery.hotkeys.add('Alt+left',function (){ 
+		
+		if(ddd>=0)
+		{
+		ddd=ddd-1;
+		}else
+		{
+			ddd=dd;
+		}
+		jQuery("li").css("background-color","#e3e7e8");
+		jQuery("li:eq("+ddd+")").css("background-color","#F00");
+	});
+	jQuery.hotkeys.add('Alt+return',function (){
+		var d=jQuery("li:eq("+ddd+")").html();
+		var z=$(".beizhud").val();
+		if(z.indexOf(d) < 0 )
+		{
+		$(".beizhud").attr('value',z+"/"+d);
+		}
+			 });
+	
+	}
+
+function addcss()/*底部备注样式切换*/
+{
+$(".a1").css("background-color","");
+$(".a2").css("background-color","");
+$(".a3").css("background-color","");
+$(".a4").css("background-color","");
+$(".a5").css("background-color","");
+$(".a6").css("background-color","");
+$(".a7").css("background-color","");
+$(".a8").css("background-color","");
+}
+/*CTRL+ALT打印快捷键调用函数*/
+function showKeyName(e)
+{
+				var keyName;
+				switch(e.keyCode)
+				{
+					case 17:keyName = e.keyCode+"[Ctrl]";break;
+					case 18:keyName = e.keyCode+"[Alt]";break;
+					default:keyName = e.keyCode+"[" + String.fromCharCode(e.keyCode) + "]";break;
+				}
+				if((e.altKey)&&(e.keyCode!=18))
+				{
+					if(keyName=="17[Ctrl]")
+					{
+						dayin()
+					}
+				}
+}
+</script>
+</script>
+
+</html>
